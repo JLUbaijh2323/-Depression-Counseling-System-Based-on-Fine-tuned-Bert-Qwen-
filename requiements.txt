@@ -1,0 +1,17 @@
+# 基础运行依赖
+flask==2.3.3               # Web界面框架
+pandas==2.1.4              # 数据处理
+numpy==1.26.0              # 数值计算
+python-dotenv==1.0.0       # 环境变量管理
+
+# 模型相关依赖
+transformers==4.35.2       # HuggingFace模型接口
+torch==2.1.0+cu118         # PyTorch（CUDA11.8版本，根据显卡调整）
+sentencepiece==0.1.99      # 分词工具（Qwen依赖）
+accelerate==0.25.0         # 模型加速库
+datasets==2.14.4           # 数据集加载工具
+
+# 微调相关依赖（可选）
+peft==0.4.0                # 参数高效微调（LoRA等）
+trl==0.5.1                 # 强化学习微调（如PPO）
+    

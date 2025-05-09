@@ -1,0 +1,19 @@
+基于微调Bert-Qwen的抑郁疏导系统/
+├── data/                # 数据存储
+│   ├── output_dataset.json  # 生成的标注数据集
+│   └── train.xls         # 训练数据（症状标注）
+├── data_gene/           # 数据生成相关
+│   ├── data_generate/    # 生成脚本目录
+│   └── datasets/         # 原始及中间数据集
+├── distil_bert_train/   # 分类模型训练代码
+│   └── train.py          # DistilBert训练脚本
+├── main/                # 主程序目录
+│   ├── distilbert_final_model/  # 分类模型文件（训练后存放）
+│   ├── Qwen_final_model #Qwen lora适配器
+│   ├── Qwen2.5-0.5B-Instruct/  # Qwen基础模型（需提前下载）
+│   ├── app.py            # Flask Web界面入口
+│   └── main.py           # 命令行主程序
+├── requirements.txt     # 项目依赖清单
+├── project_structure.txt     # 项目结构
+└── README.md            # 项目文档（含使用说明/架构设计）
+    
